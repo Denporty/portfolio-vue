@@ -1,5 +1,11 @@
 <template>
-  <p>This is my <span>try</span> component</p>
+  <div class="welcome">
+    <div class="text-container">
+      <p>Bienvenue sur mon <span>lorem ipsum</span> !</p>
+      <p>Je vous invite à <span>scroller</span> pour voir la suite</p>
+    </div>
+    <img src="img/scroll-down.png" class="shake-vertical" alt="Scroll down"/>
+  </div>
 </template>
 
 <script setup>
@@ -7,10 +13,40 @@
 </script>
 
 <style lang="scss" scoped>
-p {
-  @apply font-bold;
-  span {
-    @apply bg-red-500 text-white hover:text-black hover:bg-transparent;
+@keyframes shake-vertical{0%,100%{transform:translateY(0)}10%,30%,50%,70%{transform:translateY(-8px)}20%,40%,60%{transform:translateY(8px)}80%{transform:translateY(6.4px)}90%{transform:translateY(-6.4px)}}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.welcome {
+  @apply w-screen h-screen flex items-center justify-center bg-gray-900;
+  img {
+    @apply absolute bottom-[10vh];
+    -webkit-animation: shake-vertical 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) alternate both infinite;
+    animation: shake-vertical 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) alternate both infinite;
+  }
+  .text-container {
+    @apply flex flex-col text-center text-white;
+    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    p {
+      @apply m-0 first:mb-2;
+      font-family: "Open Sans",serif;
+      span {
+        @apply font-bold bg-red-600 text-white px-1;
+      }
+    }
   }
 }
 </style>

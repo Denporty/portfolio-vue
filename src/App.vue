@@ -8,9 +8,3 @@ import { RouterLink, RouterView } from 'vue-router'
   </header>
   <RouterView />
 </template>
-
-<style>
-p {
-  @apply font-bold;
-}
-</style>

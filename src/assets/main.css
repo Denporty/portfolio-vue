@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-display: swap;
+    font-family: "Open Sans";
+    src: url("/font/OpenSans-Light.woff2") format("woff2");
+    font-weight: 300;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Open Sans";
+    src: url("/font/OpenSans-Regular.woff2") format("woff2");
+    font-weight: normal;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Open Sans";
+    src: url("/font/OpenSans-Bold.woff2") format("woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Open Sans";
+    src: url("/font/OpenSans-ExtraBold.woff2") format("woff2");
+    font-weight: 900;
+}
+
+body {
+    @apply m-0;
+}
