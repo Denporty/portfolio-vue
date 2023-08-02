@@ -30,7 +30,8 @@
 
 
 .welcome {
-  @apply w-screen h-screen flex items-center justify-center bg-gray-900;
+  @apply w-screen h-screen flex items-center justify-center bg-black bg-contain bg-no-repeat bg-center;
+  background-image: url("src/assets/home-bg.jpg");
   img {
     @apply absolute bottom-[10vh];
     -webkit-animation: shake-vertical 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) alternate both infinite;
