@@ -6,6 +6,8 @@
     </div>
     <img src="img/scroll-down.png" class="shake-vertical" alt="Scroll down"/>
   </div>
+  <div class="triangle-bg"></div>
+  <div class="triangle-border"></div>
 </template>
 
 <script setup>
@@ -49,5 +51,17 @@
       }
     }
   }
+}
+
+
+.triangle-border {
+  @apply w-0 h-0 absolute z-[-1] top-[100vh];
+  border-top: 220px solid rgb(220 38 38);
+  border-left: 100vw solid transparent;
+}
+.triangle-bg {
+  @apply w-0 h-0 z-10;
+  border-top: 175px solid black;
+  border-left: 100vw solid transparent;
 }
 </style>
