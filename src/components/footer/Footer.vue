@@ -2,7 +2,7 @@
   <div class="mt-64">
     <div class="triangle-bg-footer"></div>
     <div class="triangle-border-footer"></div>
-    <div class="footer-content"></div>
+    <div class="footer-content animation-hover"></div>
   </div>
 </template>
 

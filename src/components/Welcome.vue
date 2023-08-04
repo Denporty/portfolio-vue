@@ -1,5 +1,5 @@
 <template>
-  <div class="welcome">
+  <div class="welcome animation-hover">
     <div class="text-container">
       <p>Bienvenue sur mon <span>lorem ipsum</span> !</p>
       <p>Je vous invite à <span>scroller</span> pour voir la suite</p>
@@ -32,7 +32,7 @@
 
 
 .welcome {
-  @apply w-screen h-screen flex items-center justify-center bg-black bg-contain bg-no-repeat bg-center;
+  @apply w-screen h-screen flex items-center justify-center bg-black bg-contain bg-no-repeat bg-center duration-300;
   background-image: url("src/assets/home-bg.jpg");
   img {
     @apply absolute bottom-[10vh];

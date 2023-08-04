@@ -7,12 +7,7 @@
             <h3>Lorem Ipsum</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu lacus eget metus mattis bibendum. Morbi molestie luctus sapien ac placerat. Pellentesque suscipit ipsum ac pulvinar faucibus. Sed vitae dui sed orci viverra dapibus in ac leo. Mauris ac tincidunt felis. </p>
           </div>
-          <a href="#">
-            <div class="group relative h-12 mx-auto w-48 overflow-hidden rounded-2xl bg-red-500 text-lg font-bold text-white cursor-pointer flex justify-center items-center">
-              Visiter
-              <div class="absolute inset-0 h-full w-full scale-0 rounded-2xl transition-all duration-300 group-hover:scale-100 group-hover:bg-white/30"></div>
-            </div>
-          </a>
+          <Button>Visiter</Button>
         </div>
     </slide>
 
@@ -24,7 +19,8 @@
 
 <script setup>
 import 'vue3-carousel/dist/carousel.css'
-import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel"
+import { Carousel, Slide, Navigation } from "vue3-carousel"
+import Button from "@/components/utils/Button.vue";
 
 const props = defineProps({
   projects: {

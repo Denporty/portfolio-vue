@@ -1,5 +1,6 @@
 <template>
   <main>
+    <Cursor></Cursor>
     <Animations></Animations>
     <Header></Header>
     <ScrollUp></ScrollUp>
@@ -23,5 +24,6 @@ import ProjectCarousel from "@/components/ProjectCarousel.vue";
 import Footer from "@/components/footer/Footer.vue";
 import Header from "@/components/header/Header.vue";
 import Contact from "@/components/Contact.vue";
+import Cursor from "@/components/Cursor.vue";
 
 </script>
