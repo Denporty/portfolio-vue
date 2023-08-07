@@ -11,15 +11,14 @@
           <div class="experience other" :class="{ 'text-left' : key % 2 === 0, 'text-right' : key % 2 !== 0 }">
             <p class="date-title">{{ item.date }}</p>
             <h4 class="title">{{ item.title }}</h4>
-            <p class="content">
-              {{ item.content }}
+            <p class="content" v-html="item.content">
             </p>
           </div>
         </div>
       </div>
-      <div class="illustration-container animation-by-left hide">
+      <div class="illustration-container animation-by-right hide">
         <img alt="Timeline illustration" src="src/assets/timeline.svg" />
-        <p>Lorem ipsum dolor sit amet</p>
+        <p>Travailler au sein de votre entreprise</p>
       </div>
     </div>
   </div>
@@ -61,7 +60,7 @@ import { TIMELINE_CONTENT } from '@/constants/timeline';
     }
   }
   .illustration-container {
-    @apply flex flex-col max-w-min text-center;
+    @apply flex flex-col max-w-min text-center ml-auto;
     img {
       @apply mx-auto -mt-24 max-w-sm;
     }

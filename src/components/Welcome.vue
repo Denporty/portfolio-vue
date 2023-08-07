@@ -1,7 +1,7 @@
 <template>
   <div class="welcome">
     <div class="text-container">
-      <p>Bienvenue sur mon <span>lorem ipsum</span> !</p>
+      <p>Bienvenue sur mon <span>Portfolio</span> !</p>
       <p>Je vous invite à <span>scroller</span> pour voir la suite</p>
     </div>
     <img src="img/scroll-down.png" class="shake-vertical" alt="Scroll down"/>
