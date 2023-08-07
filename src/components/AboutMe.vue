@@ -6,9 +6,10 @@
           <img src="https://tailus.io/sources/blocks/left-image/preview/images/startup.png" alt="image" loading="lazy" width="" height="">
         </div>
         <div class="about-me-desc">
-          <h2>Nuxt development is carried out by passionate developers</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!</p>
-          <p> Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at? Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.</p>
+          <h2>Bienvenue sur mon portfolio</h2>
+          <p>Je suis un développeur web passionné avec cinq années d'expérience dans le domaine, titulaire d'un diplôme de master en ingénierie web et mobile. </p>
+          <p>Ma maîtrise des langages JavaScript et PHP, ainsi que mon expertise dans les frameworks Laravel et Vue.js, m'ont permis de créer des solutions numériques innovantes et performantes. </p>
+          <p>Mon parcours reflète ma détermination à créer des expériences en ligne exceptionnelles, tout en restant constamment ouvert aux nouvelles opportunités et aux défis passionnants.</p>
         </div>
       </div>
     </div>
