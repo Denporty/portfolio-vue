@@ -7,6 +7,7 @@
     <Welcome></Welcome>
     <AboutMe></AboutMe>
     <Timeline></Timeline>
+    <LogoCloud></LogoCloud>
     <ProjectCarousel :projects="[1, 2, 3]"></ProjectCarousel>
     <Contact></Contact>
     <Footer></Footer>
@@ -25,5 +26,6 @@ import Footer from "@/components/footer/Footer.vue";
 import Header from "@/components/header/Header.vue";
 import Contact from "@/components/Contact.vue";
 import Cursor from "@/components/Cursor.vue";
+import LogoCloud from "@/components/LogoCloud.vue";
 
 </script>

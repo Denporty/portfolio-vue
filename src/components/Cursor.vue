@@ -1,5 +1,5 @@
 <template>
-  <div :class="[ 'g-cursor', { 'g-cursor_hover': hover }, {'g-cursor_hide': hideCursor} ]">
+  <div :class="[ 'g-cursor', { 'g-cursor_hover': hover }, {'g-cursor_hide': hideCursor} ]" class="cursor">
     <div :style="cursorCircle" class="g-cursor__circle cursor-element"></div>
     <div class="g-cursor__point cursor-element cursor-point" ref="point" :style="cursorPoint"></div>
     <slot></slot>
@@ -48,19 +48,25 @@ export default {
     });
     let animationAtOver = document.querySelectorAll('.animation-hover');
     let cursorToTransform = document.querySelectorAll('.cursor-element');
-    let cursorPoint = document.querySelector('.cursor-point');
-    document.body.addEventListener('onclick', () => {
-      cursorPoint.classList.add('cursor-point-enable')
-    })
     animationAtOver.forEach(item => {
       item.addEventListener('mouseover', () => {
         cursorToTransform.forEach(element => {
-          element.classList.add('cursor-hover')
+          if (!item.classList.contains('no-change-color')) {
+            element.classList.add('cursor-hover')
+          }
+          if (item.classList.contains('with-action')) {
+            element.classList.add('big-point')
+          }
         })
       })
       item.addEventListener('mouseleave', () => {
         cursorToTransform.forEach(element => {
-          element.classList.remove('cursor-hover')
+          if (!item.classList.contains('no-change-color')) {
+            element.classList.remove('cursor-hover')
+          }
+          if (item.classList.contains('with-action')) {
+            element.classList.remove('big-point')
+          }
         })
       })
     })
@@ -82,10 +88,9 @@ body, html {
   @apply m-0 cursor-none flex justify-center items-center;
 }
 
-.cursor-point-enable {
-  @apply w-[20px] h-[20px] duration-300 #{!important};
+button, input, textarea, label {
+  @apply cursor-none #{!important};
 }
-
 
 .g-cursor {
   &_hide {
@@ -96,7 +101,7 @@ body, html {
   }
 
   &__circle {
-    @apply pointer-events-none top-0 left-0 fixed w-[30px] h-[30px];
+    @apply pointer-events-none top-0 left-0 fixed w-[30px] h-[30px] duration-500;
     border: 2px solid #EF4444;
     border-radius: 100%;
     z-index: 5555;
@@ -105,10 +110,13 @@ body, html {
     &.cursor-hover {
       border: 2px solid #fff;
     }
+    &.big-point {
+      @apply w-[40px] h-[40px] #{!important};
+    }
   }
 
   &__point {
-    @apply top-0 left-0 fixed w-[10px] h-[10px] pointer-events-none bg-red-500;
+    @apply top-0 left-0 fixed w-[10px] h-[10px] pointer-events-none bg-red-500 duration-500;
     user-select: none;
     border-radius: 100%;
     z-index: 55555555;
@@ -116,6 +124,9 @@ body, html {
     will-change: transform;
     &.cursor-hover {
       @apply bg-white;
+    }
+    &.big-point {
+      @apply w-[20px] h-[20px] #{!important};
     }
   }
 

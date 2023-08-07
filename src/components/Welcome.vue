@@ -1,5 +1,5 @@
 <template>
-  <div class="welcome animation-hover">
+  <div class="welcome">
     <div class="text-container">
       <p>Bienvenue sur mon <span>lorem ipsum</span> !</p>
       <p>Je vous invite à <span>scroller</span> pour voir la suite</p>

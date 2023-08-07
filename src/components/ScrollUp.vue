@@ -1,6 +1,6 @@
 <template>
   <button v-on:click="scrollTop">
-    <img id="to-show" class="hide" src="img/scroll-up.png" alt="Scroll up"/>
+    <img id="to-show" class="no-change-color with-action animation-hover hide" src="img/scroll-up.png" alt="Scroll up"/>
   </button>
 </template>
 

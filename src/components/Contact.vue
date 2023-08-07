@@ -5,15 +5,15 @@
     <form action="#">
       <div>
         <label for="email">Votre adresse mail</label>
-        <input type="email" id="email" placeholder="name@mail.com" required>
+        <input type="email" id="email" class="no-change-color with-action animation-hover" placeholder="name@mail.com" required>
       </div>
       <div>
         <label for="subject">Titre</label>
-        <input type="text" id="subject" placeholder="Intitulé de votre demande" required>
+        <input type="text" id="subject" class="no-change-color with-action animation-hover" placeholder="Intitulé de votre demande" required>
       </div>
       <div class="sm:col-span-2">
         <label for="message">Votre message</label>
-        <textarea id="message" rows="6" required placeholder="Contenu de votre message..."></textarea>
+        <textarea id="message" rows="6" class="no-change-color with-action animation-hover" required placeholder="Contenu de votre message..."></textarea>
       </div>
       <Button>Envoyer</Button>
     </form>

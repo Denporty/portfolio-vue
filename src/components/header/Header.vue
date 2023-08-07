@@ -1,6 +1,6 @@
 <template>
-  <div class="top-banner animation-hover"></div>
-  <p class="animation-hover">Portfolio Victor</p>
+  <div class="top-banner"></div>
+  <p class="with-action animation-hover">Portfolio Victor</p>
 </template>
 
 <script setup>
